@@ -18,8 +18,7 @@ Contained Functions
 ===================
 
 * node_implement() - A soft depend ingredient adder (by Rubenwardy)
-* get_time_ms() - Returns the current time in millisecs (by Sapier)
-* get_current_time() - Returns the current time in secs (by Sapier)
+* assert_backtrace() - A debug function for backtracing (by Sapier)
 * vector
 	* calc_distance() - Calculates the distance between two points (by Sapier)
 	* calc_distance_2d() - Calculates the distance between two points, excluding the height (by Sapier)

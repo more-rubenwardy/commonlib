@@ -38,36 +38,6 @@ end
 
 
 
-
--------------------------------------------------------------------------------
--- get_time_ms()
--------------------------------------------------------------------------------
-function commonlib.get_time_ms()
-	if minetest.setting_getbool("mobf_enable_socket_trace") then
-		return socket.gettime()*1000
-	else
-	    return 0
-	end
-end
-
-
-
-
--------------------------------------------------------------------------------
--- get_current_time()
--------------------------------------------------------------------------------
-
-function commonlib.get_current_time()
-	if minetest.get_time ~= nil then
-		return minetest.get_time()
-	else
-		return os.time(os.date('*t'))
-	end
-end
-
-
-
-
 -------------------------------------------------------------------------------
 -- vector.calc_distance(pos1,pos2)
 -------------------------------------------------------------------------------
@@ -75,8 +45,8 @@ end
 -- pos2: second position
 -------------------------------------------------------------------------------
 function commonlib.vector.calc_distance(pos1,pos2)
-	mobf_assert_backtrace(pos1 ~= nil)
-	mobf_assert_backtrace(pos2 ~= nil)
+	commonlib.assert_backtrace(pos1 ~= nil)
+	commonlib.assert_backtrace(pos2 ~= nil)
 	
 	return math.sqrt( 	math.pow(pos1.x-pos2.x,2) + 
 				math.pow(pos1.y-pos2.y,2) +
@@ -231,9 +201,9 @@ function commonlib.vector.get_surface(x,z, min_y, max_y)
 end
 
 -------------------------------------------------------------------------------
--- vector.get_surface(x,z, min_y, max_y)
+-- assert_backtrace(value)
 -------------------------------------------------------------------------------
-function mobf_assert_backtrace(value)
+function commonlib.assert_backtrace(value)
 	if value == false then
 		print(debug.traceback("Current Callstack:\n"))
 		assert(value)
