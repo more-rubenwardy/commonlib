@@ -16,10 +16,10 @@ Code: CC-BY-SA
 
 Contained Functions
 ===================
-* Namespace: __mod__ [mod.lua]
+* __mod__ [mod.lua] - namespace
 	* __node_implement()__ - A soft depend ingredient adder - uses aliases (by Rubenwardy)
 	* __assert_backtrace()__ - A debug function for backtracing (by Sapier)
-* Namespace: __v3__ [vector.lua]
+* __v3__ [vector.lua] - namespace
 	* __new()__ - creates new vector from integers, floats, or tables (by celeron55)
 	* __copy()__ - copies a vector (by PilzAdam)
 	* __floor()__ - rounds vectors to integers (by celeron55)
@@ -32,5 +32,5 @@ Contained Functions
 	* __norm()__ - normalise the vector (by celeron55)
 	* __distance()__ - the distance between two vectors (by celeron55)
 	* __rotate_y()__ - rotate y (by celeron55)
-* Namespace: __world__  [world.lua]
+* __world__  [world.lua] - namespace
 	* __get_surface()__ - get surface of terrain for x/z coordinates (by Sapier)
