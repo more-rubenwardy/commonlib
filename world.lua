@@ -8,7 +8,7 @@
 -- or as a file in your mod's directory
 -------------------------------------------------------------------------------
 
-commonlib.world={}
+world={}
 
 -------------------------------------------------------------------------------
 -- world.get_surface(x,z, min_y, max_y)
@@ -18,7 +18,7 @@ commonlib.world={}
 -- min_y: minimum y-coordinate to consider
 -- max_y: maximum y-coordinate to consider
 -------------------------------------------------------------------------------
-function commonlib.world.get_surface(x,z, min_y, max_y)
+function world.get_surface(x,z, min_y, max_y)
 
 	local last_node = minetest.env:get_node({ x=x,y=min_y, z=z })
 

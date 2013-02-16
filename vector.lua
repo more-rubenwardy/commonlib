@@ -8,12 +8,12 @@
 -- or as a file in your mod's directory
 -------------------------------------------------------------------------------
 
-commonlib.vector={}
+v3={}
 
 -------------------------------------------------------------------------------
 -- Misc vector functions by celeron55, wtfpl
 -------------------------------------------------------------------------------
-function commonlib.vector.new(x, y, z)
+function v3.new(x, y, z)
     if x == nil then
         return {
             x = 0,
@@ -34,59 +34,59 @@ function commonlib.vector.new(x, y, z)
         z = z,
     }
 end
-function commonlib.vector.floor(v)
+function v3.floor(v)
     return {
         x = math.floor(v.x),
         y = math.floor(v.y),
         z = math.floor(v.z),
     }
 end
-function commonlib.vector.cmp(v, w)
+function v3.cmp(v, w)
     return (
         v.x == w.x and
         v.y == w.y and
         v.z == w.z
     )
 end
-function commonlib.vector.add(v, w)
+function v3.add(v, w)
     return {
         x = v.x + w.x,
         y = v.y + w.y,
         z = v.z + w.z,
     }
 end
-function commonlib.vector.sub(v, w)
+function v3.sub(v, w)
     return {
         x = v.x - w.x,
         y = v.y - w.y,
         z = v.z - w.z,
     }
 end
-function commonlib.vector.mul(v, a)
+function v3.mul(v, a)
     return {
         x = v.x * a,
         y = v.y * a,
         z = v.z * a,
     }
 end
-function commonlib.vector.len(v)
+function v3.len(v)
     return math.sqrt(
         math.pow(v.x, 2) +
         math.pow(v.y, 2) +
         math.pow(v.z, 2)
     )
 end
-function commonlib.vector.norm(v)
-    return vector.mul(v, 1.0 / commonlib.vector.len(v))
+function v3.norm(v)
+    return v3.mul(v, 1.0 / v3.len(v))
 end
-function commonlib.vector.distance(v, w)
+function v3.distance(v, w)
     return math.sqrt(
         math.pow(v.x - w.x, 2) +
         math.pow(v.y - w.y, 2) +
         math.pow(v.z - w.z, 2)
     )
 end
-function commonlib.vector.rotate_y(v, a)
+function v3.rotate_y(v, a)
     return {
         x = v.x * math.cos(a) - v.z * math.sin(a),
         y = v.y,
@@ -95,12 +95,12 @@ function commonlib.vector.rotate_y(v, a)
 end
 
 -------------------------------------------------------------------------------
--- commonlib.vector.get_direction(pos1,pos2)
+-- v3.get_direction(pos1,pos2)
 -------------------------------------------------------------------------------
 -- pos1: source point
 -- pos2: destination point
 -------------------------------------------------------------------------------
-function commonlib.vector.get_direction(pos1,pos2)
+function v3.get_direction(pos1,pos2)
 
 	local x_raw = pos2.x -pos1.x
 	local y_raw = pos2.y -pos1.y
@@ -155,7 +155,7 @@ end
 -- speedx: speed in direction x
 -- speedz: speed in direction z
 -------------------------------------------------------------------------------
-function commonlib.vector.calc_scalar_speed(speedx,speedz)
+function v3.calc_scalar_speed(speedx,speedz)
 	return math.sqrt(math.pow(speedx,2)+
 	                          math.pow(speedz,2))
 end

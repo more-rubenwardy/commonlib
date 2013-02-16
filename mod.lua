@@ -9,7 +9,7 @@
 -------------------------------------------------------------------------------
 
 -- set up the base table
-commonlib={}
+mod={}
 
 -------------------------------------------------------------------------------
 -- node_implement(modname,n_ext,n_int,resultfunc)
@@ -23,7 +23,7 @@ commonlib={}
 -- to see an example of this in action, go to this link
 -- https://github.com/rubenwardy/food/blob/master/support.lua#L105
 -------------------------------------------------------------------------------
-function commonlib.node_implement(modname,n_ext,n_int,resultfunc)
+function mod.node_implement(modname,n_ext,n_int,resultfunc)
          if not minetest.get_modpath(modname) then
             -- Mod is NOT installed
             resultfunc()
@@ -39,7 +39,7 @@ end
 -------------------------------------------------------------------------------
 -- assert_backtrace(value)
 -------------------------------------------------------------------------------
-function commonlib.assert_backtrace(value)
+function mod.assert_backtrace(value)
 	if value == false then
 		print(debug.traceback("Current Callstack:\n"))
 		assert(value)
