@@ -3,28 +3,28 @@ CommonLib by Rubenwardy
 
 Adds common functions that help minetest modders achieve perfection in both their mod, and in interacting with other mods too.
 
-You can include this library as a mod (recommended) or as a file in your mod's directory
+You can include this library as a mod (recommended) or just add the commonlib.lua file to your mod's directory.
 
 License
 =======
 
-Code: WTFPL
+Code: CC-BY-SA
+
+* These conditions apply to the Commonlib code, and not to any mods using the library.
+* Commonlib is counted as a seperate library rather than part of the mod using it.
+* This means you can use Commonlib in a mod with a different license to this.
 
 Contained Functions
 ===================
 
-Starred functions are based on sapiers code from the Mobf mod pack.
-
-
-
-* node_implement() - A soft depend ingredient adder. #28
-* get_time_ms() - Returns the current time in millisecs *
-* get_current_time() - Returns the current time in secs *
+* node_implement() - A soft depend ingredient adder (by Rubenwardy)
+* get_time_ms() - Returns the current time in millisecs (by Sapier)
+* get_current_time() - Returns the current time in secs (by Sapier)
 * vector
-	* calc_distance() - Calculates the distance between two points *
-	* calc_distance_2d() - Calculates the distance between two points, excluding the height *
-	* calc_scalar_speed() - Calculates scalar speed *
-	* calc_vector_components() - Calculate x and z components of a directed speed *
-	* get_direction() - Calculates the direction from one point to enougher *
-	* round_pos() - Rounds the position to integers *
-	* get_surface() - get surface of terrain for x/z coordinates *
+	* calc_distance() - Calculates the distance between two points (by Sapier)
+	* calc_distance_2d() - Calculates the distance between two points, excluding the height (by Sapier)
+	* calc_scalar_speed() - Calculates scalar speed (by Sapier)
+	* calc_vector_components() - Calculate x and z components of a directed speed (by Sapier)
+	* get_direction() - Calculates the direction from one point to enougher (by Sapier)
+	* round_pos() - Rounds the position to integers (by Sapier)
+	* get_surface() - get surface of terrain for x/z coordinates (by Sapier)
