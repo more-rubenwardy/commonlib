@@ -19,11 +19,16 @@ Contained Functions
 
 * node_implement() - A soft depend ingredient adder (by Rubenwardy)
 * assert_backtrace() - A debug function for backtracing (by Sapier)
-* vector
-	* calc_distance() - Calculates the distance between two points (by Sapier)
-	* calc_distance_2d() - Calculates the distance between two points, excluding the height (by Sapier)
-	* calc_scalar_speed() - Calculates scalar speed (by Sapier)
-	* calc_vector_components() - Calculate x and z components of a directed speed (by Sapier)
-	* get_direction() - Calculates the direction from one point to enougher (by Sapier)
-	* round_pos() - Rounds the position to integers (by Sapier)
+* vector [vector.lua]
+	* new() - creates new vector from integers, floats, or tables (by celeron55)
+	* floor() - rounds vectors to integers (by celeron55)
+	* cmp() - compares vectors (by celeron55)
+	* add() - adds two vectors together (by celeron55)
+	* sub() - subtracts two vectors (by celeron55)
+	* mul() - multiples two vectors (by celeron55)
+	* len() - returns length of the vectors (by celeron55)
+	* norm() - normalise the vector (by celeron55)
+	* distance() - the distance between two vectors (by celeron55)
+	* rotate_y() - rotate y (by celeron55)
+* world  [commonlib.lua]
 	* get_surface() - get surface of terrain for x/z coordinates (by Sapier)
