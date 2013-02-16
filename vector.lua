@@ -34,6 +34,9 @@ function v3.new(x, y, z)
         z = z,
     }
 end
+function v3.copy(v)
+	return {x=v.x, y=v.y, z=v.z}
+end
 function v3.floor(v)
     return {
         x = math.floor(v.x),
@@ -47,6 +50,9 @@ function v3.cmp(v, w)
         v.y == w.y and
         v.z == w.z
     )
+end
+function v3.equal(v1, v2)
+	return v1.x == v2.x and v1.y == v2.y and v1.z == v2.z
 end
 function v3.add(v, w)
     return {

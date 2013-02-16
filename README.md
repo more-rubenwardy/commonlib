@@ -21,8 +21,10 @@ Contained Functions
 	* assert_backtrace() - A debug function for backtracing (by Sapier)
 * v3 [vector.lua]
 	* new() - creates new vector from integers, floats, or tables (by celeron55)
+	* copy() - copies a vector (by PilzAdam)
 	* floor() - rounds vectors to integers (by celeron55)
 	* cmp() - compares vectors (by celeron55)
+	* equal() - checks if the vectors are equal (by PilzAdam)
 	* add() - adds two vectors together (by celeron55)
 	* sub() - subtracts two vectors (by celeron55)
 	* mul() - multiples two vectors (by celeron55)
