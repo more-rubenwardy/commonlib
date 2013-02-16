@@ -1,0 +1,1 @@
+dofile(minetest.get_modpath("commonlib").."/mod_interaction.lua")
