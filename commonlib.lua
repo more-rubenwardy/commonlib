@@ -10,8 +10,8 @@
 
 
 -- set up the base table
-local commonlib={}
-local commonlib.vector={}
+commonlib={}
+commonlib.vector={}
 
 
 -------------------------------------------------------------------------------
