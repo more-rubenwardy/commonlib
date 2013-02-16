@@ -17,20 +17,20 @@ Code: CC-BY-SA
 Contained Functions
 ===================
 * __mod__ [mod.lua] - namespace
-	* __node_implement()__ - A soft depend ingredient adder - uses aliases (by Rubenwardy)
-	* __assert_backtrace()__ - A debug function for backtracing (by Sapier)
+	* __node_implement()__ - A soft depend ingredient adder - uses aliases *(by Rubenwardy)*
+	* __assert_backtrace()__ - A debug function for backtracing *(by Sapier)*
 * __v3__ [vector.lua] - namespace
-	* __new()__ - creates new vector from integers, floats, or tables (by celeron55)
-	* __copy()__ - copies a vector (by PilzAdam)
-	* __floor()__ - rounds vectors to integers (by celeron55)
-	* __cmp()__ - compares vectors (by celeron55)
-	* __equal()__ - checks if the vectors are equal (by PilzAdam)
-	* __add()__ - adds two vectors together (by celeron55)
-	* __sub()__ - subtracts two vectors (by celeron55)
-	* __mul()__ - multiples two vectors (by celeron55)
-	* __len()__ - returns length of the vectors (by celeron55)
-	* __norm()__ - normalise the vector (by celeron55)
-	* __distance()__ - the distance between two vectors (by celeron55)
-	* __rotate_y()__ - rotate y (by celeron55)
+	* __new()__ - creates new vector from integers, floats, or tables *(by celeron55)*
+	* __copy()__ - copies a vector *(by PilzAdam)*
+	* __floor()__ - rounds vectors to integers *(by celeron55)*
+	* __cmp()__ - compares vectors *(by celeron55)*
+	* __equal()__ - checks if the vectors are equal *(by PilzAdam)*
+	* __add()__ - adds two vectors together *(by celeron55)*
+	* __sub()__ - subtracts two vectors *(by celeron55)*
+	* __mul()__ - multiples two vectors *(by celeron55)*
+	* __len()__ - returns length of the vectors *(by celeron55)*
+	* __norm()__ - normalise the vector *(by celeron55)*
+	* __distance()__ - the distance between two vectors *(by celeron55)*
+	* __rotate_y()__ - rotate y *(by celeron55)*
 * __world__  [world.lua] - namespace
-	* __get_surface()__ - get surface of terrain for x/z coordinates (by Sapier)
+	* __get_surface()__ - get surface of terrain for x/z coordinates *(by Sapier)*
