@@ -16,10 +16,10 @@ Code: CC-BY-SA
 
 Contained Functions
 ===================
-
-* node_implement() - A soft depend ingredient adder (by Rubenwardy)
-* assert_backtrace() - A debug function for backtracing (by Sapier)
-* vector [vector.lua]
+* commonlib [commonlib.lua]
+	* node_implement() - A soft depend ingredient adder - uses aliases (by Rubenwardy)
+	* assert_backtrace() - A debug function for backtracing (by Sapier)
+* commonlib.vector [vector.lua]
 	* new() - creates new vector from integers, floats, or tables (by celeron55)
 	* floor() - rounds vectors to integers (by celeron55)
 	* cmp() - compares vectors (by celeron55)
@@ -30,5 +30,5 @@ Contained Functions
 	* norm() - normalise the vector (by celeron55)
 	* distance() - the distance between two vectors (by celeron55)
 	* rotate_y() - rotate y (by celeron55)
-* world  [commonlib.lua]
+* commonlib.world  [world.lua]
 	* get_surface() - get surface of terrain for x/z coordinates (by Sapier)
