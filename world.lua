@@ -4,8 +4,8 @@
 -- Adds common functions that help minetest modders achieve
 -- perfection in both their mod, and in interacting with other mods
 -------------------------------------------------------------------------------
--- You can include this library as a mod (recommended)
--- or as a file in your mod's directory
+-- #### world.lua
+-- functions that interact with the world
 -------------------------------------------------------------------------------
 
 world={}

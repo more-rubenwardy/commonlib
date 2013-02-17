@@ -4,8 +4,8 @@
 -- Adds common functions that help minetest modders achieve
 -- perfection in both their mod, and in interacting with other mods
 -------------------------------------------------------------------------------
--- You can include this library as a mod (recommended)
--- or as a file in your mod's directory
+-- #### mod.lua
+-- functions that interact with other mods
 -------------------------------------------------------------------------------
 
 -- set up the base table
@@ -31,6 +31,16 @@ function mod.node_implement(modname,n_ext,n_int,resultfunc)
             -- Mod IS installed
             minetest.register_alias(n_int,n_ext)
          end
+end
+
+function mod.soft_depend(modname,func)
+	if minetest.get_modpath(modname) then
+		minetest.after(0, function()
+			if func ~= nil then
+				func()
+			end
+		end)
+	end
 end
 
 
