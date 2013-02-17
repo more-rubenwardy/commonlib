@@ -36,3 +36,6 @@ Contained Functions
 * __world__  [world.lua]
 	* __get_surface(__ x, z __)__ - get surface of terrain for x/z coordinates (by Sapier)
 	* __node_owner(__ pos __)__ - get the name of that node's owner (by VanessaE)
+* __table__ [table.lua]
+	* __toCSV(__ tt __)__ - convert a table into a CSV (by the Internet)
+	* __fromCSV(__ tt __)__ - convert a CSV into a table (by the Internet)
