@@ -10,4 +10,6 @@
 
 dofile(minetest.get_modpath("commonlib").."/mod.lua")
 dofile(minetest.get_modpath("commonlib").."/vector.lua")
+dofile(minetest.get_modpath("commonlib").."/vector_calc.lua")
+dofile(minetest.get_modpath("commonlib").."/vector_cmp.lua")
 dofile(minetest.get_modpath("commonlib").."/world.lua")
