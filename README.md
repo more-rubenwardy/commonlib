@@ -35,3 +35,4 @@ Contained Functions
 	* __rotate_y(__ v, u __)__ - rotate y (by celeron55)
 * __world__  [world.lua]
 	* __get_surface(__ x, z __)__ - get surface of terrain for x/z coordinates (by Sapier)
+	* __node_owner(__ pos __)__ - get the name of that node's owner (by VanessaE)

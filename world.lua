@@ -35,3 +35,33 @@ function world.get_surface(x,z, min_y, max_y)
     end
     return nil
 end
+
+
+-------------------------------------------------------------------------------
+-- world.node_owner(pos,placer)
+-------------------------------------------------------------------------------
+-- pos: position of the node
+-- placer: 
+-- returns the name of the owner
+-------------------------------------------------------------------------------
+
+function world.node_owner(pos)
+	local ownername = ""
+	if type(IsPlayerNodeOwner) == "function" then	-- node_ownership mod
+		if HasOwner(pos, "") then	-- returns true if the node is owned
+			if type(getLastOwner) == "function" then	-- ...is an old version
+				ownername = getLastOwner(pos)
+			elseif type(GetNodeOwnerName) == "function" then	-- ...is a recent version
+				ownername = GetNodeOwnerName(pos)
+			else
+				ownername = "someone"
+			end
+		end
+	elseif type(isprotect)=="function" then -- glomie's protection mod
+		if not isprotect(5, pos, "xbnwifn378ekihnks") then
+			ownername = "someone"
+		end
+	end
+	
+	return ownername
+end
