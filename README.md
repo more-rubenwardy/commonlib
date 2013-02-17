@@ -3,7 +3,7 @@ CommonLib by Rubenwardy
 
 Adds common functions that help minetest modders achieve perfection in both their mod, and in interacting with other mods too.
 
-You can include this library as a mod (recommended) or just add the commonlib.lua file to your mod's directory.
+You can include the whole library as a mod (recommended) or just include some modules in your mod.
 			
 License
 =======
