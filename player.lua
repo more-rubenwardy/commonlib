@@ -4,13 +4,18 @@
 -- Adds common functions that help minetest modders achieve
 -- perfection in both their mod, and in interacting with other mods
 -------------------------------------------------------------------------------
--- #### init.lua
--- load the modules
+-- #### player.lua
+-- player functions
 -------------------------------------------------------------------------------
 
-dofile(minetest.get_modpath("commonlib").."/mod.lua")
-dofile(minetest.get_modpath("commonlib").."/player.lua")
-dofile(minetest.get_modpath("commonlib").."/vector.lua")
-dofile(minetest.get_modpath("commonlib").."/vector_calc.lua")
-dofile(minetest.get_modpath("commonlib").."/vector_cmp.lua")
-dofile(minetest.get_modpath("commonlib").."/world.lua")
+-- set up the base table
+player={}
+
+function player_exists( name )
+	local privs = minetest.get_player_privs( name );
+	if( not( privs )) then
+		return false;
+	else
+		return true;
+	end
+end

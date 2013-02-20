@@ -20,6 +20,8 @@ Contained Functions
 	* __node_implement(__ modname,n_ext,n_int,resultfunc __)__ - A soft depend ingredient adder - uses aliases (by Rubenwardy)
 	* __soft_depend(__ modname,func __)__ - Runs a function if a mod is present, and after it loads (by Rubenwardy)
 	* __assert_backtrace(__ item __)__ - A debug function for backtracing (by Sapier)
+* __player__ [player.lua] - namespace
+	* __player_exists(__ name __) - sees if a player exists (by Sokomine)
 * __v3__ - namespace
 	* core module [vector.lua]
 		* __new(__ x, y, z __)__ - creates new vector from integers, floats, or tables (by celeron55)
